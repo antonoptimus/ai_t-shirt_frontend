@@ -9,7 +9,6 @@ import state from '../store';
 const Shirt = () => {
   const snap = useSnapshot(state);
   const { nodes, materials } = useGLTF('/shirt_baked.glb');
-  const anisotropy = 16;
   const logoTexture = useTexture(snap.logoDecal);
   const fullTexture = useTexture(snap.fullDecal);
 
